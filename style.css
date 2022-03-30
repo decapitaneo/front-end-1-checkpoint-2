@@ -170,6 +170,17 @@ a {
 }
 
 .card_decricao h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.card_decricao p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .card__descricaoHp {
@@ -205,16 +216,39 @@ a {
 }
 
 footer {
+  width: 100%;
+  background: #33bb69;
 }
 
 .footer_geral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__autor {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /*justify-content: flex-end; */
+  align-items: center;
+  padding: 80px 83px;
 }
 
 .footer__autor__descricao {
+  width: 30%;
 }
+
+.footer__autor__descricao:nth-child(2) {
+}
+/*
+
+.footer__autor__descricao:last-child {
+  display: block;
+  text-align: right;
+}
+*/
 
 .footer__autor__nome {
 }
@@ -223,10 +257,22 @@ footer {
 }
 
 .footer__redes__sociais {
+  display: flex;
+  flex-direction: row;
 }
 
-.footer__img {
+.footer__redes__sociais:last-child {
+}
+
+.footer__redes__sociais .footer__img {
+  background-color: #ff523b;
 }
 
 .footer__checkpoint p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #555;
+  padding-bottom: 80px;
 }
