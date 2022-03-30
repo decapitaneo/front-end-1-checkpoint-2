@@ -139,6 +139,8 @@ a {
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: space-around;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .container_card {
