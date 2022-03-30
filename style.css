@@ -14,11 +14,19 @@ body {
 header {
 }
 
+.logo {
+  box-shadow: 0px 16px 15px -9px rgba(0, 0, 0, 0.21);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 61px;
+}
+
 .navbar {
   display: flex;
   align-items: center;
   padding: 20px;
   height: 8vh;
+  background: #5dc285;
 }
 
 nav {
@@ -40,6 +48,26 @@ a {
   text-decoration: none;
   color: #555;
 }
+
+/*
+nav ul li a::before {
+  content: '';
+  height: 5px; crio um 'conteúdo' de altura de 5px 
+
+  background: #ff523b;
+  position: absolute;
+  bottom: -10px;
+  width: 0%;
+  transition: ease-in 1s;
+
+  /*dica: width iniciando em 0 e aplicação de uma transição
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+}
+
+*/
 
 .header__container {
   /*max-width: 1300px;*/
@@ -74,7 +102,7 @@ a {
 .banner__descricao p {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 2rem;
   line-height: 28px;
   color: whitesmoke;
@@ -174,6 +202,7 @@ a {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  padding-bottom: 14px;
 }
 .card_decricao p {
   font-style: normal;
@@ -181,11 +210,13 @@ a {
   font-size: 18px;
   line-height: 21px;
   color: rgba(0, 0, 0, 0.75);
+  text-align: justify;
 }
 
 .card__descricaoHp {
   width: 100%;
   height: 180px;
+  padding: 26px 32px;
 }
 
 .btn__card {
@@ -204,7 +235,7 @@ a {
 }
 
 .btn__card:hover {
-  background: #33bb69;
+  background: #085f2b;
   opacity: 85%;
 }
 
@@ -217,7 +248,7 @@ a {
 
 footer {
   width: 100%;
-  background: #33bb69;
+  background: #5dc285;
 }
 
 .footer_geral {
@@ -230,27 +261,24 @@ footer {
 .footer__autor {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  /*justify-content: flex-end; */
-  align-items: center;
-  padding: 80px 83px;
+  padding-top: 80px;
+  padding-left: 83px;
+  padding-right: 83px;
 }
 
 .footer__autor__descricao {
-  width: 30%;
+  width: 50%;
 }
 
 .footer__autor__descricao:nth-child(2) {
-}
-/*
-
-.footer__autor__descricao:last-child {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
   text-align: right;
 }
-*/
 
-.footer__autor__nome {
+.footer img .footer__autor__nome {
 }
 
 .footer__autor__nome h4 {
@@ -259,13 +287,11 @@ footer {
 .footer__redes__sociais {
   display: flex;
   flex-direction: row;
+  padding-top: 12px;
 }
 
-.footer__redes__sociais:last-child {
-}
-
-.footer__redes__sociais .footer__img {
-  background-color: #ff523b;
+.footer__redes__sociais img:first-child {
+  padding-right: 16px;
 }
 
 .footer__checkpoint p {
@@ -273,6 +299,6 @@ footer {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  color: #555;
+  color: whitesmoke;
   padding-bottom: 80px;
 }
